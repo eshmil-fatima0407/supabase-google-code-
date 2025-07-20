@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Post App</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>Create a Post</h1>
+
+    <p><strong>User:</strong> <span id="user-info"></span> <button id="logoutBtn">Logout</button></p>
+
+    <input type="text" id="title" placeholder="Enter post title" />
+    <textarea id="description" placeholder="Write description..."></textarea>
+
+    <input type="file" id="image" accept="image/*" />
+    
+    <div id="emoji-picker">
+      <button onclick="addEmoji('😊')">😊</button>
+      <button onclick="addEmoji('🔥')">🔥</button>
+      <button onclick="addEmoji('🎉')">🎉</button>
+      <button onclick="addEmoji('❤️')">❤️</button>
+    </div>
+
+    <button id="postBtn">Post</button>
+    <div id="message"></div>
+  </div>
+
+  <script type="module" src="app.js"></script>
+</body>
+</html>
